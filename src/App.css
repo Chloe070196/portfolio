@@ -1,38 +1,59 @@
 /* colour palette */
 /* generated via coolors.co */
 :root {
-  /* option1 */
-  --background: #3d3b8eff;
-  --areas: #6883baff;
+
+  --area: rgb(75, 40, 115);
+  --background: rgb(108, 145, 219);
   --text: #f9f9f9ff;
   --highlight1: #e072a4ff;
-  --hilight2: #b0e298ff;
-/* 
-option 2
-  --background: #f1bf98ff;
-  --areas: #e1f4cbff;
+  --highlight2: #b0e298ff;
+
+
+  /* --background: #f1bf98ff;
+  --area: #e1f4cbff;
   --text: #bacba9ff;
   --highlight1: #717568ff;
-  --hilight2: #3f4739ff;
+  --highlight2: #3f4739ff;  */
+ 
 
-option 3
-  --background: #042a2bff;
-  --areas: #5eb1bfff;
+  /* --background: #042a2bff;
+  --area: #5eb1bfff;
   --text: #54f2f2ff;
   --highlight1: #fcfcfcff;
-  --hilight2: #f4e04dff;
+  --highlight2: #f4e04dff; */
 
-option 4
-  --background: #edffecff;
-  --areas: #61e786ff;
+
+  /* --background: #edffecff;
+  --area: #61e786ff;
   --text: #5a5766ff;
   --highlight1: #48435cff;
-  --hilight2: #9792e3ff;
-  
-option 5
-  --background: #336699ff;
-  --areas: #86bbd8ff;
-  --text: #2f4858ff;
+  --highlight2: #9792e3ff;
+   */
+
+  /* --highlight1: #336699ff;
+  --background: #86bbd8ff;
+  --area: #2f4858ff;
   --highlight1: #9ee493ff;
-  --hilight2: #daf7dcff; */
+  --text: #daf7dcff;    */
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: var(--background);
+}
+
+.rectangular-container{
+  background-color: var(--area);
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.round-container{
+  background-color: var(--area);
+  border-radius: 100%;
+  padding: 20px;
 }
