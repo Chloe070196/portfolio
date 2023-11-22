@@ -1,42 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* colour palette */
+/* generated via coolors.co */
+:root {
+  /* option1 */
+  --background: #3d3b8eff;
+  --areas: #6883baff;
+  --text: #f9f9f9ff;
+  --highlight1: #e072a4ff;
+  --hilight2: #b0e298ff;
+/* 
+option 2
+  --background: #f1bf98ff;
+  --areas: #e1f4cbff;
+  --text: #bacba9ff;
+  --highlight1: #717568ff;
+  --hilight2: #3f4739ff;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+option 3
+  --background: #042a2bff;
+  --areas: #5eb1bfff;
+  --text: #54f2f2ff;
+  --highlight1: #fcfcfcff;
+  --hilight2: #f4e04dff;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+option 4
+  --background: #edffecff;
+  --areas: #61e786ff;
+  --text: #5a5766ff;
+  --highlight1: #48435cff;
+  --hilight2: #9792e3ff;
+  
+option 5
+  --background: #336699ff;
+  --areas: #86bbd8ff;
+  --text: #2f4858ff;
+  --highlight1: #9ee493ff;
+  --hilight2: #daf7dcff; */
 }

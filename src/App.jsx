@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <header></header>
+      <section></section>
       <main>Portfolio</main>
     </>
   )
