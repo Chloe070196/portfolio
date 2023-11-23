@@ -4,7 +4,7 @@
   --area1: rgba(75, 40, 115, 0.925);
   --background: rgb(185, 229, 253);
   --text: #f9f9f9ff;
-  --area2: rgba(255, 127, 36, 0.511);
+  --area2: rgba(135, 92, 65, 0.359);
   --highlight: #b0e298ff;
   --unit: 20px;
 }
@@ -22,20 +22,26 @@ body{
   background-color: var(--background);
 }
 
+
+h2 {
+  font-size: 22px;
+}
+
 /* containers */
 
 .rectangular-container{
   background-color: var(--area1);
   border-radius: 3px;
-  padding: var(--unit);
-  margin: var(--unit);
+  padding: 10px;
+  margin: 10px;
   color: var(--text);
+
 }
 .rectangular-container:hover{
   border: 2px solid white;
   background-color: var(--highlight);
   color: var(--area1);
-  padding: calc(var(--unit) - 2px);
+  padding: 8px;
 }
 
 
@@ -49,36 +55,31 @@ body{
 .section-container{
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 3fr repeat(2, 2fr);
   background-color: rgba(47, 72, 88, 0.116);
   border-radius: 3px;
-  padding: var(--unit) 60px;
+  padding: var(--unit);
   margin: var(--unit);
   color: var(--text);
 }
 
-/* .absolute-top-right{
-  position:absolute;
-  top: 30px;
-  right:30px;
-} */
 
-
-/* unique styling */
+/*STYLING FOR SPECIFC COMPONENTS */
 main {
   display: grid;
   grid-template-columns: 3fr 7fr;
-  /* border-top: 5px solid var(--background); */
 }
 
+/* DASHBOARD */
 #dashboard {
   height: 470px;
 }
 
-.hero::before {
+/* DASHBOARD - hero */
+
+/* .hero::before {
   background-color: rgba(185, 229, 253, 0.322); 
-  /* the img will change later, just using this to see what I can do with it */
-  /* background-image: url("src/assets/pexels-negative-space-97077.jpg"); */
+  background-image: url("src/assets/pexels-negative-space-97077.jpg"); 
   background-size: cover;
   background-blend-mode: soft-light;
   filter: blur(2px);
@@ -87,8 +88,7 @@ main {
   content: '';
   position: absolute; 
   top: 0; 
-}
-
+} */
 .hero {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -96,26 +96,7 @@ main {
   position: sticky;
   top: 0;
 }
-
-h1 {
-  font-size: 4vw;
-  line-height: 5vw;
-  
-}
-
-h2 {
-  font-size: 28px;
-}
-
-.fill{
-  width: 180px;
-  height: 180px;
-  padding: 0;
-  border: 2px solid white;
-  object-fit: contain;
-  place-self: center;
-}
-
+ 
 .title-container{
   height: 15vw;
   width: fit-content;
@@ -124,11 +105,39 @@ h2 {
   padding: var(--unit) 90px;
   margin: 10px;;
   border: 2px solid rgb(255, 255, 255);
+  background: linear-gradient(325deg, rgba(255, 255, 255, 0.098), rgba(75, 40, 115, 0.925));
 }
+h1 {
+  font-size: 4vw;
+  line-height: 5vw;
+  
+}
+
+.fill{
+  width: 180px;
+  height: 180px;
+  padding: 0;
+  margin: 20px;
+  border: 2px solid white;
+  object-fit: contain;
+  place-self: center;
+}
+
+/* DASHBOARD - left-menu */
+
+.tech-stack{
+  background-color: rgba(255, 255, 255, 0.713);
+  color: var(--area1);
+  height: 130px;
+  pointer-events: none;
+}
+
+/* DASHBOARD - left-menu - projects */
 
 #display-projects{
   display: grid;
   grid-template-columns: 3fr 2fr;
+  padding: 10px 5px;
 }
 
 .project-card{
@@ -147,7 +156,7 @@ h2 {
   height: 110px;
 }
 #project-card3{
-  height: 80px;
+  height: 100px;
 }
 #project-card4{
   height: 180px;
@@ -155,3 +164,5 @@ h2 {
 #project-card5{
   height: 150px;
 }
+
+/* DASHBOARD - left-menu - about me */

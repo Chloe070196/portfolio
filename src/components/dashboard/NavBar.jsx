@@ -4,22 +4,18 @@ export default function NavBar({ setDisplay }) {
   return (
     <>
       <nav className="section-container">
+        <div className="rectangular-container tech-stack">
+        <h2>tech stack : HTML, CSS, JS, React + Vite</h2>
+        </div>
         <button
-          className="rectangular-container"
+          className="rectangular-container nav"
           value="display-projects"
           onClick={(e) => toggleDisplay(e, setDisplay)}
         >
-          <h2>projects</h2>
+          <h2>things I've done so far</h2>
         </button>
         <button
-          className="rectangular-container"
-          value="display-tech-stack"
-          onClick={(e) => toggleDisplay(e, setDisplay)}
-        >
-          <h2>tech stack</h2>
-        </button>
-        <button
-          className="rectangular-container"
+          className="rectangular-container nav"
           value="display-about-me"
           onClick={(e) => toggleDisplay(e, setDisplay)}
         >

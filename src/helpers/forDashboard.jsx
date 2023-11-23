@@ -1,4 +1,4 @@
-import { TechStack, About } from "../components/dashboard";
+import { About } from "../components/dashboard";
 import Projects from '../components/dashboard/projects/Projects.jsx'
 
 const renderDisplayAsSet = (state) => {
@@ -9,9 +9,7 @@ const renderDisplayAsSet = (state) => {
     if (state === "display-projects") {
       return <Projects />;
     }
-    if (state === "display-tech-stack") {
-      return <TechStack />;
-    }
+    
     if (state === "display-about-me") {
       return <About />;
     }
