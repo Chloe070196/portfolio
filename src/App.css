@@ -7,21 +7,29 @@
   --area2: rgba(135, 92, 65, 0.359);
   --highlight: #b0e298ff;
   --unit: 20px;
+  --background-gradient1: radial-gradient(
+    closest-corner at 60% 60%,
+    rgb(140, 195, 227),
+    rgba(83, 56, 114, 0.679)
+  );
+  --background-radient2: linear-gradient(
+    325deg,
+    rgba(255, 255, 255, 0.098),
+    rgba(75, 40, 115, 0.925)
+  );
 }
 
-
 /* recurrent styling */
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: 'Segoe UI', 'Tahoma';
+  font-family: "Segoe UI", "Tahoma";
   position: relative;
 }
 
-body{
+body {
   background-color: var(--background);
 }
-
 
 h2 {
   font-size: 22px;
@@ -29,30 +37,28 @@ h2 {
 
 /* containers */
 
-.rectangular-container{
+.rectangular-container {
   background-color: var(--area1);
   border-radius: 3px;
   padding: 10px;
   margin: 10px;
   color: var(--text);
-
 }
-.rectangular-container:hover{
+.rectangular-container:hover {
   border: 2px solid white;
   background-color: var(--highlight);
   color: var(--area1);
   padding: 8px;
 }
 
-
-.round-container{
+.round-container {
   /* background-color: var(--area1); */
   border-radius: 100%;
   padding: var(--unit);
   color: var(--text);
 }
 
-.section-container{
+.section-container {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 3fr repeat(2, 2fr);
@@ -62,7 +68,6 @@ h2 {
   margin: var(--unit);
   color: var(--text);
 }
-
 
 /*STYLING FOR SPECIFC COMPONENTS */
 main {
@@ -96,24 +101,23 @@ main {
   position: sticky;
   top: 0;
 }
- 
-.title-container{
+
+.title-container {
   height: 15vw;
   width: fit-content;
   max-width: 975px;
   pointer-events: none;
   padding: var(--unit) 90px;
-  margin: 10px;;
+  margin: 10px;
   border: 2px solid rgb(255, 255, 255);
-  background: linear-gradient(325deg, rgba(255, 255, 255, 0.098), rgba(75, 40, 115, 0.925));
+  background: var(--background-radient2)
 }
 h1 {
   font-size: 4vw;
   line-height: 5vw;
-  
 }
 
-.fill{
+.fill {
   width: 180px;
   height: 180px;
   padding: 0;
@@ -125,7 +129,7 @@ h1 {
 
 /* DASHBOARD - left-menu */
 
-.tech-stack{
+.tech-stack {
   background-color: rgba(255, 255, 255, 0.713);
   color: var(--area1);
   height: 130px;
@@ -134,35 +138,89 @@ h1 {
 
 /* DASHBOARD - left-menu - projects */
 
-#display-projects{
+#display-projects {
   display: grid;
   grid-template-columns: 3fr 2fr;
   padding: 10px 5px;
 }
 
-.project-card{
+.project-card {
   margin-left: 0;
-  background-color: var(--area2);
+  background: var(--background-radient2);
 }
 
-.column{
+.project-card:hover {
+  border: 2px solid white;
+  background: unset;
+  background-color: var(--highlight);
+  color: var(--area1);
+}
+
+.column {
   margin-right: 15px;
 }
 
-#project-card1{
-  height:80px;
+#project-card1 {
+  height: 80px;
 }
-#project-card2{
-  height: 110px;
+#project-card2 {
+  height: 120px;
 }
-#project-card3{
+#project-card3 {
   height: 100px;
 }
-#project-card4{
+#project-card4 {
   height: 180px;
 }
-#project-card5{
+#project-card5 {
   height: 150px;
 }
 
 /* DASHBOARD - left-menu - about me */
+#display-about-me {
+  display: grid;
+}
+
+.about {
+  position: absolute;
+  background-color: grey;
+  background: var(--background-gradient1);
+  color: var(--text);
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+}
+
+.about:hover {
+  border: 2px solid white;
+  background: unset;
+  background-color: var(--highlight);
+  color: var(--area1);
+  width: 150px;
+  height: 150px;
+}
+
+#about-dance {
+  top: 40vh;
+  left: 20vw;
+  height: 60px;
+  width: 60px;
+}
+#about-teach {
+  top: 20vh;
+  left: 50vw;
+  height: 100px;
+  width: 100px;
+}
+#about-code {
+  top: 10vh;
+  left: 20vh;
+  height: 120px;
+  width: 120px;
+}
+#about-study {
+  top: 25vh;
+  left: 30vw;
+  height: 80px;
+  width: 80px;
+}
