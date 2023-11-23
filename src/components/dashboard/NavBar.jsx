@@ -3,7 +3,6 @@ import { toggleDisplay } from "../../helpers/forDashboard";
 export default function NavBar({ setDisplay }) {
   return (
     <>
-      {/* toggles what is displayed in the view section */}
       <nav className="section-container">
         <button
           className="rectangular-container"
