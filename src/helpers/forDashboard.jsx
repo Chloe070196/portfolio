@@ -1,4 +1,5 @@
-import { Projects, TechStack, About } from "../components/dashboard";
+import { TechStack, About } from "../components/dashboard";
+import Projects from '../components/dashboard/projects/Projects.jsx'
 
 const renderDisplayAsSet = (state) => {
     if (state === null) {

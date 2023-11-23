@@ -1,11 +1,11 @@
 /* colour palette */
 /* generated via coolors.co */
 :root {
-  --area: rgba(75, 40, 115, 0.925);
+  --area1: rgba(75, 40, 115, 0.925);
   --background: rgb(185, 229, 253);
   --text: #f9f9f9ff;
-  --highlight1: #e072a4ff;
-  --highlight2: #b0e298ff;
+  --area2: rgba(255, 127, 36, 0.511);
+  --highlight: #b0e298ff;
   --unit: 20px;
 }
 
@@ -25,7 +25,7 @@ body{
 /* containers */
 
 .rectangular-container{
-  background-color: var(--area);
+  background-color: var(--area1);
   border-radius: 3px;
   padding: var(--unit);
   margin: var(--unit);
@@ -33,14 +33,14 @@ body{
 }
 .rectangular-container:hover{
   border: 2px solid white;
-  background-color: var(--highlight2);
-  color: var(--area);
+  background-color: var(--highlight);
+  color: var(--area1);
   padding: calc(var(--unit) - 2px);
 }
 
 
 .round-container{
-  background-color: var(--area);
+  /* background-color: var(--area1); */
   border-radius: 100%;
   padding: var(--unit);
   color: var(--text);
@@ -68,13 +68,17 @@ body{
 main {
   display: grid;
   grid-template-columns: 3fr 7fr;
-  border-top: 5px solid var(--background);
+  /* border-top: 5px solid var(--background); */
+}
+
+#dashboard {
+  height: 470px;
 }
 
 .hero::before {
   background-color: rgba(185, 229, 253, 0.322); 
   /* the img will change later, just using this to see what I can do with it */
-  background-image: url("src/assets/pexels-negative-space-97077.jpg");
+  /* background-image: url("src/assets/pexels-negative-space-97077.jpg"); */
   background-size: cover;
   background-blend-mode: soft-light;
   filter: blur(2px);
@@ -88,6 +92,9 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  margin: 35vh 20px;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -116,7 +123,7 @@ h2 {
   pointer-events: none;
   padding: var(--unit) 90px;
   margin: 10px;;
-  border: 2px solid rgba(255, 255, 255, 0.688);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 #display-projects{
@@ -126,6 +133,11 @@ h2 {
 
 .project-card{
   margin-left: 0;
+  background-color: var(--area2);
+}
+
+.column{
+  margin-right: 15px;
 }
 
 #project-card1{

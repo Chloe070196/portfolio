@@ -4,7 +4,7 @@ export default function Header() {
       <header className="main-grid hero">
         <img
           className="fill round-container absolute-top-right"
-          src="src\assets\IMG_20231122_180703.jpg"
+          src="src\assets\img\IMG_20231122_180703.jpg"
         />
         <section className="rectangular-container title-container">
           <h1>
