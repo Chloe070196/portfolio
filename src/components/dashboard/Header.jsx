@@ -8,7 +8,7 @@ export default function Header() {
         />
         <section className="rectangular-container title-container">
           <h1>
-            Hi there! I'm Chloé, <br></br> a junior software developer
+            Hi there! I'm Chloé, <br></br> Lorem ipsum dolor sit amet consectetur.
           </h1>
           {/* I'll change the img later, that one's just for trying things out */}
         </section>

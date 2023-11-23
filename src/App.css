@@ -73,6 +73,7 @@ main {
 
 .hero::before {
   background-color: rgba(185, 229, 253, 0.322); 
+  /* the img will change later, just using this to see what I can do with it */
   background-image: url("src/assets/pexels-negative-space-97077.jpg");
   background-size: cover;
   background-blend-mode: soft-light;
@@ -90,8 +91,8 @@ main {
 }
 
 h1 {
-  font-size: 5vw;
-  line-height: 6vw;
+  font-size: 4vw;
+  line-height: 5vw;
   
 }
 
@@ -109,11 +110,13 @@ h2 {
 }
 
 .title-container{
-  height: 20vw;
+  height: 15vw;
   width: fit-content;
   max-width: 975px;
   pointer-events: none;
   padding: var(--unit) 90px;
+  margin: 10px;;
+  border: 2px solid rgba(255, 255, 255, 0.688);
 }
 
 #display-projects{
