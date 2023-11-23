@@ -11,7 +11,8 @@ function App() {
   const [display, setDisplay] = useState(null);
 
   const toggleDisplay = (e) => {
-    setDisplay(e.target.value);
+    setDisplay(e.currentTarget.value);
+    console.log(display)
   };
 
   const renderDisplayAsSet = () => {
@@ -32,13 +33,14 @@ function App() {
 
   return (
     <>
-      <section className="hero rectangular-container">
-        <h1>Hi there! I'm Chloé, a junior software developer</h1>
-        <div className='round-container'>
-          <img src="./assets/IMG_20231122_180703.jpg"></img>
-        </div>
+    <header className="main-grid">
+      <img className='fill round-container absolute-top-right' src="src\assets\IMG_20231122_180703.jpg"/>
+      <section className="rectangular-container title-container">
+        <h1>Hi there! I'm Chloé, <br></br> a junior software developer</h1>
+        {/* I'll change the img later, that one's just for trying things out */}
       </section>
-      <main id="dashboard">
+    </header>
+      <main className="main-grid" id="dashboard">
         {/* toggles what is displayed in the view section */}
         <nav className="section-container">
           <button
@@ -64,14 +66,14 @@ function App() {
           </button>
         </nav>
         <section>{renderDisplayAsSet()}</section>
-        <Routes>
+        {/* <Routes>
           <Route></Route>
           <Route></Route>
           <Route></Route>
           <Route></Route>
           <Route></Route>
           <Route></Route>
-        </Routes>
+        </Routes> */}
       </main>
     </>
   );

@@ -2,7 +2,7 @@
 /* generated via coolors.co */
 :root {
   --area: rgba(75, 40, 115, 0.925);
-  --background: rgb(164, 223, 255);
+  --background: rgb(185, 229, 253);
   --text: #f9f9f9ff;
   --highlight1: #e072a4ff;
   --highlight2: #b0e298ff;
@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Segoe UI', 'Tahoma';
+  position: relative;
 }
 
 body{
@@ -34,6 +35,7 @@ body{
   border: 2px solid white;
   background-color: var(--highlight2);
   color: var(--area);
+  padding: calc(var(--unit) - 2px);
 }
 
 
@@ -50,30 +52,71 @@ body{
   grid-template-rows: repeat(3, 1fr);
   background-color: rgba(47, 72, 88, 0.116);
   border-radius: 3px;
-  padding: var(--unit)  60px;
+  padding: var(--unit) 60px;
   margin: var(--unit);
   color: var(--text);
 }
 
-
-
+/* .absolute-top-right{
+  position:absolute;
+  top: 30px;
+  right:30px;
+} */
 
 
 /* unique styling */
-main{
+main {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 3fr 7fr;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 h1 {
   font-size: 76px;
+  line-height: 120px;
 }
 
 h2 {
   font-size: 28px;
 }
 
-.hero{
+.fill{
+  width: 180px;
+  height: 180px;
+  padding: 0;
+  border: 2px solid white;
+  object-fit: contain;
+  place-self: center;
+}
+
+.title-container{
   height: 300px;
+  width: fit-content;
   pointer-events: none;
+  padding: var(--unit) 90px;
+}
+
+#display-projects{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+#project-card1{
+  height:80px;
+}
+#project-card2{
+  height: 110px;
+}
+#project-card3{
+  height: 80px;
+}
+#project-card4{
+  height: 180px;
+}
+#project-card5{
+  height: 150px;
 }
