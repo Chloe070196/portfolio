@@ -1,5 +1,4 @@
 import { toggleDisplay } from "../../helpers/forDashboard";
-
 import {ContactDetails} from "../recurrent-components/ContactDetails"
 
 
@@ -8,7 +7,7 @@ export default function NavBar({ setDisplay }) {
     <>
       <nav className="section-container">
         <div className="rectangular-container tech-stack">
-          <h2>tech stack : HTML, CSS, JS, React + Vite, GitHub/ Git, VSCode</h2>
+          <h2>TECH STACK : <br></br> HTML, CSS, JS, React + Vite, GitHub/ Git, VSCode</h2>
         </div>
         <ContactDetails />
         <button

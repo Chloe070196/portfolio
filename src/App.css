@@ -12,7 +12,7 @@
     rgb(140, 195, 227),
     rgba(83, 56, 114, 0.679)
   );
-  --background-radient2: linear-gradient(
+  --background-gradient2: linear-gradient(
     325deg,
     rgba(255, 255, 255, 0.098),
     rgba(75, 40, 115, 0.925)
@@ -43,7 +43,12 @@ h2 {
   font-size: 2vw;
 }
 
+
 /* containers */
+
+article{
+  color: var(--area1);
+}
 
 .rectangular-container {
   background-color: var(--area1);
@@ -58,6 +63,7 @@ h2 {
   color: var(--area1);
   padding: 8px;
   box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.474);
+  height:fit-content;
 }
 
 .round-container {
@@ -76,7 +82,7 @@ h2 {
   padding: 10px;
   margin: var(--unit) 40px;
   color: var(--text);
-  max-height: 350px;
+  max-height: 370px;
   position: sticky;
   top: 300px;
 }
@@ -133,7 +139,7 @@ main {
   padding: var(--unit) 5vw;
   margin: 10px;
   border: 2px solid rgb(255, 255, 255);
-  background: var(--background-radient2);
+  background: var(--background-gradient2);
 }
 h1 {
   font-size: 4vw;
@@ -154,14 +160,12 @@ h1 {
 .tech-stack {
   background-color: rgba(255, 255, 255, 0.713);
   color: var(--area1);
-  height: 105px;
   pointer-events: none;
 }
 
 .contact {
   background-color: rgba(255, 255, 255, 0.713);
   color: var(--area1);
-  height: 55px;
   pointer-events: none;
 }
 
@@ -175,7 +179,7 @@ h1 {
 
 .project-card {
   margin-left: 0;
-  background: var(--background-radient2);
+  background: var(--background-gradient2);
 }
 
 .project-card:hover {
@@ -193,7 +197,7 @@ h1 {
   height: 80px;
 }
 #project-card2 {
-  height: 120px;
+  height: 130px;
 }
 #project-card3 {
   height: 100px;
@@ -221,12 +225,12 @@ h1 {
 
 .about {
   position: absolute;
-  background-color: grey;
-  background: var(--background-gradient1);
+  background: var(--background-gradient2);
   color: var(--text);
   font-weight: bold;
   display: grid;
   place-content: center;
+  border: 2px solid white;
 }
 
 .about:hover {
@@ -239,30 +243,37 @@ h1 {
 }
 
 #about-dance {
-  top: 40vh;
-  left: 20vw;
-  height: 60px;
-  width: 60px;
+  top: 30vh;
+  left: 9vw;
+  height: 8vw;
+  width: 8vw;
+  max-width: 70px;
+  max-height: 70px;
 }
 #about-teach {
-  top: 20vh;
-  left: 50vw;
-  height: 100px;
-  width: 100px;
+  top: 8vh;
+  left: 40vw;
+  height: 12vw;
+  width: 12vw;
+  max-width: 110px;
+  max-height: 110px;
 }
 #about-code {
-  top: 10vh;
-  left: 20vh;
-  height: 120px;
-  width: 120px;
+  top: 3vh;
+  left: 1vw;
+  height: 13vw;
+  width: 13vw;
+  max-width: 140px;
+  max-height: 140px;
 }
 #about-study {
   top: 25vh;
   left: 30vw;
-  height: 80px;
-  width: 80px;
+  height: 9vw;
+  width: 9vw;
+  max-width: 90px;
+  max-height: 90px;
 }
-
 
 @media screen and (max-width:590px){
   .body {
@@ -273,9 +284,8 @@ h1 {
       rgba(169, 209, 232, 0.588),
       rgba(169, 209, 232, 0.488),
       rgba(169, 209, 232, 0.777)
-
     );
     background-attachment: fixed;
-  }
-  
+  }  
 }
+

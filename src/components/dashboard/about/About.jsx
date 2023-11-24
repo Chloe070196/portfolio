@@ -7,10 +7,10 @@ export default function About() {
   return (
     <>
       <section className="section-container" id="display-about-me" onClick={() => navigate('/about')}>
-          <div className="round-container about" id="about-dance">15 year dancing</div>
-          <div className="round-container about" id="about-teach">4 years teaching</div>
-          <div className="round-container about" id="about-code">3 months coding</div>
-          <div className="round-container about" id="about-study">5 years studying</div>
+          <div className="round-container about" id="about-dance"><h3>trained dancer</h3></div>
+          <div className="round-container about" id="about-teach"><h3>experienced EFL teacher</h3></div>
+          <div className="round-container about" id="about-code"><h3>newbie developer</h3></div>
+          <div className="round-container about" id="about-study"><h3>BsC Psychology holder</h3></div>
       </section>
  
     </>
