@@ -29,6 +29,14 @@
 
 body {
   background-color: var(--background);
+  background: radial-gradient(
+    closest-corner at 65vw 60vh,
+    rgba(255, 255, 222, 0.174),
+    rgba(239, 236, 209, 0.363),
+    rgba(179, 213, 233, 0.249),
+    rgba(169, 209, 232, 0.588)
+  );
+  background-attachment: fixed;
 }
 
 h2 {
@@ -113,7 +121,7 @@ main {
   padding: var(--unit) 5vw;
   margin: 10px;
   border: 2px solid rgb(255, 255, 255);
-  background: var(--background-radient2)
+  background: var(--background-radient2);
 }
 h1 {
   font-size: 4vw;
@@ -121,7 +129,7 @@ h1 {
 }
 
 .fill {
-  width:  20vw;
+  width: 20vw;
   height: 20vw;
   padding: 0;
   border: 2px solid white;
@@ -227,15 +235,19 @@ h1 {
   width: 80px;
 }
 
-/* 
+
 @media screen and (max-width:590px){
-  .title-container{
-    height: calc(13vh- 40px);
-   
+  .body {
+    background-color: var(--background);
+    background: radial-gradient(
+      closest-corner at 60vw 65vh,
+      rgba(239, 236, 209, 0.353),
+      rgba(169, 209, 232, 0.588),
+      rgba(169, 209, 232, 0.488),
+      rgba(169, 209, 232, 0.777)
+
+    );
+    background-attachment: fixed;
   }
-  .fill{
-    height: calc(13vh + 40px);
-    width: calc(13vh + 40px);
   
-  }
-} */
+}
