@@ -3,7 +3,7 @@ import Projects from '../components/dashboard/projects/Projects.jsx'
 
 const renderDisplayAsSet = (state) => {
     if (state === null) {
-      return <p>loading...</p>;
+      return <section className="section-container"><p>loading...</p></section>;
     }
 
     if (state === "display-projects") {

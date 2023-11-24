@@ -4,7 +4,7 @@ import {ProjectCard1, ProjectCard2, ProjectCard3, ProjectCard4, ProjectCard5} fr
 export default function Projects() {
  
   return (
-    <section id="display-projects">
+    <section id="display-projects" className="section-container">
       <div className='column'>
 
        <ProjectCard1 />

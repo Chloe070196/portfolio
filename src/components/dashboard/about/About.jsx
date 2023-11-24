@@ -6,7 +6,7 @@ export default function About() {
   const navigate = useNavigate()
   return (
     <>
-      <section id="display-about-me" onClick={() => navigate('/about')}>
+      <section className="section-container" id="display-about-me" onClick={() => navigate('/about')}>
           <div className="round-container about" id="about-dance">15 year dancing</div>
           <div className="round-container about" id="about-teach">4 years teaching</div>
           <div className="round-container about" id="about-code">3 months coding</div>
