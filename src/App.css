@@ -98,6 +98,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 4fr;
   margin: 35vh 20px;
+  padding: 20px;
   position: sticky;
   top: 0;
 }
@@ -107,7 +108,7 @@ main {
   width: fit-content;
   max-width: 975px;
   pointer-events: none;
-  padding: var(--unit) 90px;
+  padding: var(--unit) 5vw;
   margin: 10px;
   border: 2px solid rgb(255, 255, 255);
   background: var(--background-radient2)
@@ -118,10 +119,9 @@ h1 {
 }
 
 .fill {
-  width: 180px;
-  height: 180px;
+  width:  20vw;
+  height: 20vw;
   padding: 0;
-  margin: 20px;
   border: 2px solid white;
   object-fit: contain;
   place-self: center;
@@ -224,3 +224,16 @@ h1 {
   height: 80px;
   width: 80px;
 }
+
+/* 
+@media screen and (max-width:590px){
+  .title-container{
+    height: calc(13vh- 40px);
+   
+  }
+  .fill{
+    height: calc(13vh + 40px);
+    width: calc(13vh + 40px);
+  
+  }
+} */
