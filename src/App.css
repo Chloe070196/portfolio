@@ -64,9 +64,12 @@ h2 {
   grid-template-rows: 3fr repeat(2, 2fr);
   background-color: rgba(47, 72, 88, 0.116);
   border-radius: 3px;
-  padding: var(--unit);
-  margin: var(--unit);
+  padding: 10px;
+  margin: var(--unit) 40px;
   color: var(--text);
+  max-height: 350px;
+  position: sticky;
+  top: 300px;
 }
 
 /*STYLING FOR SPECIFC COMPONENTS */
@@ -97,14 +100,13 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  margin: 35vh 20px;
-  padding: 20px;
+  margin: 35vh 40px;
   position: sticky;
   top: 0;
 }
 
 .title-container {
-  height: 15vw;
+  height: 16vw;
   width: fit-content;
   max-width: 975px;
   pointer-events: none;

@@ -10,7 +10,7 @@ function Dashboard() {
       <Header />
       <main className="main-grid" id="dashboard">
         <NavBar setDisplay={setDisplay} />
-        <section>{renderDisplayAsSet(display)}</section>
+        <section className="section-container">{renderDisplayAsSet(display)}</section>
       </main>
     </>
   );
