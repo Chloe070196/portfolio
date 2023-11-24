@@ -43,11 +43,30 @@ h2 {
   font-size: 2vw;
 }
 
+.home-button{
+  background-color: var(--background);
+  border: 2px solid white;
+  font-weight: bold;
+  color: var(--area1);
+  position: absolute; 
+  right: 20px;
+  padding: 10px;
+  top: 15px;
+}
 
 /* containers */
 
 article{
   color: var(--area1);
+  background-color: rgba(255, 255, 255, 0.492);
+  border: 2px solid white;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  min-height: 60px;
 }
 
 .rectangular-container {
@@ -72,6 +91,14 @@ article{
   padding: var(--unit);
   color: var(--text);
 }
+
+.grid-4-cols{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1fr;
+}
+
+
 
 .section-container {
   display: grid;
@@ -144,6 +171,7 @@ main {
 h1 {
   font-size: 4vw;
   line-height: 5vw;
+  display: inline-block;
 }
 
 .fill {

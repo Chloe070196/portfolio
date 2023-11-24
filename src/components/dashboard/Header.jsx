@@ -1,6 +1,7 @@
 export default function Header() {
   return (
     <>
+    <h2> Still at draft / buidling stage</h2>
       <header className="main-grid hero">
         <img
           className="fill round-container absolute-top-right"
