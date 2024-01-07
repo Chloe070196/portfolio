@@ -25,6 +25,7 @@
   margin: 0;
   font-family: "Segoe UI", "Tahoma";
   position: relative;
+  font-size: 18px;
 }
 
 body {
@@ -39,8 +40,36 @@ body {
   background-attachment: fixed;
 }
 
+/* font and text */
+
+h1 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
 h2 {
-  font-size: 2vw;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--area1);
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 14px;
+  color: rgb(124, 134, 146);
+  font-weight: 100;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px;
+  color: slategray;
 }
 
 .home-button{
@@ -70,19 +99,17 @@ header {
 }
 
 .rectangular-container {
-  background-color: var(--area1);
+  background-color: rgb(255, 255, 255, 0.5);
+  border: 2px solid rgb(255, 255, 255, 0.5);
   border-radius: 3px;
-  padding: 5px;
+  padding: 12px;
   margin: 5px;
   color: var(--text);
 }
 .rectangular-container:hover {
-  border: 2px solid white;
   background-color: var(--highlight);
   color: var(--area1);
-  padding: 8px;
-  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.474);
-  height:fit-content;
+  border-color:white;
 }
 
 .round-container {
@@ -98,18 +125,16 @@ header {
   grid-template-rows: 1fr;
 }
 
-
-
 .section-container {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 3fr repeat(2, 2fr);
-  background-color: rgba(47, 72, 88, 0.116);
+  border: 1px solid white;
   border-radius: 3px;
   padding: 10px;
   margin: var(--unit) 40px;
   color: var(--text);
-  max-height: 370px;
+  max-height: 400px;
   position: sticky;
   top: 300px;
 }
@@ -128,6 +153,8 @@ header {
 /*STYLING FOR SPECIFC COMPONENTS */
 main {
   display: grid;
+  position: sticky;
+  top: 200px;
   grid-template-columns: 3fr 7fr;
 }
 
@@ -138,45 +165,22 @@ main {
 
 /* DASHBOARD - hero */
 
-/* .hero::before {
-  background-color: rgba(185, 229, 253, 0.322); 
-  background-image: url("src/assets/pexels-negative-space-97077.jpg"); 
-  background-size: cover;
-  background-blend-mode: soft-light;
-  filter: blur(2px);
-  width: 100%;
-  height: 100%;
-  content: '';
-  position: absolute; 
-  top: 0; 
-} */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  margin: 35vh 40px;
+  grid-template-columns: 1fr 4fr 1fr;
+  margin: 40px;
   position: sticky;
   top: 0;
 }
 
 .title-container {
-  height: 16vw;
-  width: fit-content;
-  max-width: 975px;
-  pointer-events: none;
-  padding: var(--unit) 5vw;
-  margin: 10px;
   border: 2px solid rgb(255, 255, 255);
   background: var(--background-gradient2);
 }
-h1 {
-  font-size: 4vw;
-  line-height: 5vw;
-  display: inline-block;
-}
 
 .fill {
-  width: 20vw;
-  height: 20vw;
+  width: 13vw;
+  height: 13vw;
   padding: 0;
   border: 2px solid white;
   object-fit: contain;
@@ -186,13 +190,11 @@ h1 {
 /* DASHBOARD - left-menu */
 
 .tech-stack {
-  background-color: rgba(255, 255, 255, 0.713);
   color: var(--area1);
   pointer-events: none;
 }
 
 .contact {
-  background-color: rgba(255, 255, 255, 0.713);
   color: var(--area1);
   pointer-events: none;
 }
@@ -207,14 +209,30 @@ h1 {
 
 .project-card {
   margin-left: 0;
-  background: var(--background-gradient2);
+  display: grid;
+  grid-template-rows: 32px 1fr;
+  overflow: auto;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+.project-card::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card h2 {
+  place-self: center;
 }
 
 .project-card:hover {
   border: 2px solid white;
   background: unset;
-  background-color: var(--highlight);
-  color: var(--area1);
+  background-color: rgba(112, 128, 144, 0.466);
+  color: white;
+}
+
+.project-card:hover p {
+  color: white;
 }
 
 .column {
@@ -301,6 +319,15 @@ h1 {
   width: 9vw;
   max-width: 90px;
   max-height: 90px;
+}
+
+.about-page-link {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: grey;
 }
 
 @media screen and (max-width:590px){
