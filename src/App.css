@@ -38,6 +38,8 @@ body {
     rgba(169, 209, 232, 0.588)
   );
   background-attachment: fixed;
+  max-width: 90vw;
+  margin: 0 5vw 5vw;
 }
 
 /* font and text */
@@ -72,15 +74,8 @@ p {
   color: slategray;
 }
 
-.home-button{
-  background-color: var(--background);
-  border: 2px solid white;
-  font-weight: bold;
-  color: var(--area1);
-  position: absolute; 
-  right: 20px;
-  padding: 10px;
-  top: 15px;
+.white-font {
+  color: white;
 }
 
 /* containers */
@@ -118,10 +113,7 @@ header {
 }
 
 .round-container {
-  /* background-color: var(--area1); */
   border-radius: 100%;
-  padding: var(--unit);
-  color: var(--text);
 }
 
 .grid-4-cols{
@@ -137,12 +129,19 @@ header {
   border: 1px solid white;
   border-radius: 3px;
   padding: 10px;
-  margin: var(--unit) 40px;
-  color: var(--text);
   max-height: 400px;
+  overflow: auto;
+  color: var(--text);
   position: sticky;
   top: 300px;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
 }
+
+.section-container::-webkit-scrollbar {
+  display: none;
+}
+
 
 .icon-container{
   display: inline-block;
@@ -160,7 +159,8 @@ main {
   display: grid;
   position: sticky;
   top: 200px;
-  grid-template-columns: 3fr 7fr;
+  grid-template-columns: 2fr 7fr;
+  gap: 12px;
 }
 
 /* DASHBOARD */
@@ -172,8 +172,8 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  margin: 40px;
+  grid-template-columns: 1fr 4fr;
+  margin: 40vh 0;
   position: sticky;
   top: 0;
 }
@@ -184,14 +184,24 @@ main {
 }
 
 .fill {
-  width: 13vw;
-  height: 13vw;
+  width: 200px;
+  height: 200px;
   padding: 0;
   border: 2px solid white;
   object-fit: contain;
   place-self: center;
 }
 
+.home-button{
+  background-color: var(--background);
+  border: 2px solid white;
+  font-weight: bold;
+  color: var(--area1);
+  position: absolute; 
+  right: 20px;
+  padding: 10px;
+  top: 15px;
+}
 /* DASHBOARD - left-menu */
 
 .tech-stack {
@@ -208,16 +218,20 @@ main {
 
 #display-projects {
   display: grid;
-  width: 600px;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 160px));
+  grid-template-columns: repeat(auto-fit, minmax(204px, 220px));
   grid-template-rows: auto;
+  justify-content: center;
+  gap: 12px;
+  height: fit-content;
 }
 
 .project-card {
   margin-left: 0;
-  min-width: 120px;
+  width: 200px;
+  height: 400px;
   display: grid;
   grid-template-rows: 32px 1fr;
+  border: 1px solid white;
   overflow: auto;
   -ms-overflow-style: none;  
   scrollbar-width: none; 

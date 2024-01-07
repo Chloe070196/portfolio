@@ -9,13 +9,10 @@ export default function Header() {
         />
         <section className="rectangular-container title-container">
           <h1>
-            Hi there! I'm Chloé, <br></br> Lorem ipsum dolor sit amet
-            consectetur.
+            Chloé Zermatten
           </h1>
           {/* I'll change the img later, that one's just for trying things out */}
-        </section>
         <section className="rectangular-container contact">
-          <h2>CONTACT</h2>
           <a className="icon-container" alt="email">
             <img />
             svg
@@ -28,6 +25,9 @@ export default function Header() {
             <img />
             svg
           </a>
+        </section>
+        <p className="white-font">chloezermatten@gmail.com</p>
+        <p className="white-font">0044 7492 617 864</p>
         </section>
       </section>
     </>

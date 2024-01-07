@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <header className="rectangular-container">
-       <h1>from performances to web development</h1> 
+       <h1>from performances to software development</h1> 
        <button className="home-button" onClick={() => navigate("/")}>HOME</button>
       </header>
       <section className="grid-4-cols">
