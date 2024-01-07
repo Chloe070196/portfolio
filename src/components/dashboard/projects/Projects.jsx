@@ -5,17 +5,11 @@ export default function Projects() {
  
   return (
     <section id="display-projects" className="section-container">
-      <div className='column'>
-
        <ProjectCard1 />
        <ProjectCard2 />
        <ProjectCard3 />
-      </div>
-      <div className='column'>
-
        <ProjectCard4 />
        <ProjectCard5 />
-      </div>
     </section>
   );
 }

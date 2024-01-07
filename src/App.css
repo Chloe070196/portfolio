@@ -5,7 +5,7 @@
   --background: rgb(185, 229, 253);
   --text: #f9f9f9ff;
   --area2: rgba(135, 92, 65, 0.359);
-  --highlight: #b0e298ff;
+  --highlight: rgb(252, 252, 121);
   --unit: 20px;
   --background-gradient1: radial-gradient(
     closest-corner at 60% 60%,
@@ -100,16 +100,21 @@ header {
 
 .rectangular-container {
   background-color: rgb(255, 255, 255, 0.5);
-  border: 2px solid rgb(255, 255, 255, 0.5);
+  border: 4px solid transparent;
   border-radius: 3px;
   padding: 12px;
   margin: 5px;
   color: var(--text);
 }
 .rectangular-container:hover {
-  background-color: var(--highlight);
-  color: var(--area1);
-  border-color:white;
+  background-color: var(--area1);
+  border-color: white;
+  font-weight: bold;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.397);
+}
+
+.rectangular-container:hover h2 {
+  color: white;
 }
 
 .round-container {
@@ -203,12 +208,14 @@ main {
 
 #display-projects {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  padding: 10px 5px;
+  width: 600px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 160px));
+  grid-template-rows: auto;
 }
 
 .project-card {
   margin-left: 0;
+  min-width: 120px;
   display: grid;
   grid-template-rows: 32px 1fr;
   overflow: auto;
@@ -237,22 +244,6 @@ main {
 
 .column {
   margin-right: 15px;
-}
-
-#project-card1 {
-  height: 80px;
-}
-#project-card2 {
-  height: 130px;
-}
-#project-card3 {
-  height: 100px;
-}
-#project-card4 {
-  height: 180px;
-}
-#project-card5 {
-  height: 150px;
 }
 
 /* DASHBOARD - left-menu - about me */
