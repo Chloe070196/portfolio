@@ -1,15 +1,12 @@
-import {ProjectCard1, ProjectCard2, ProjectCard3, ProjectCard4, ProjectCard5} from './projectCards/index.js'
+import { ProjectCard } from './projectCards/index.js'
+import { cards } from '../../../../db/project_cards.js'
 
 export default function Projects() {
-  //cards as popup!!!!
- 
   return (
     <section id="display-projects" className="section-container">
-       <ProjectCard1 />
-       <ProjectCard2 />
-       <ProjectCard3 />
-       <ProjectCard4 />
-       <ProjectCard5 />
+      {cards.map((card, index) => (
+        <ProjectCard key={index + 'projectCard'} card={card}/>
+      ))}
     </section>
   );
 }
